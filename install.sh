@@ -1,5 +1,8 @@
 #!/bin/bash
 
+WORKING_DIRECTORY=$(pwd)
+cd "$(dirname "$0")"
+
 cd ./hto-server
 echo "installing server dependencies"
 npm install
