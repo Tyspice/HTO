@@ -8,11 +8,15 @@
     "npm": ">=6.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "nodemon app.js",
+    "client": "cd ../hto-ui && ng serve -o",
+    "dev": "concurrently \"npm:server\" \"npm:client\""
   },
   "author": "Tyspice and Leezy",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "concurrently": "^6.2.1",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
   }
 }
