@@ -10,4 +10,7 @@ Hot Tub Optimization Project. Yadadamean?
 
 ### To Install
 clone the repository.\
-run `./install.sh`
+`./install.sh`
+
+### To start app in development mode
+`./start.sh`
