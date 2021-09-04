@@ -12,5 +12,6 @@ Hot Tub Optimization Project. Yadadamean?
 clone the repository.\
 `./install.sh`
 
-### To start app in development mode
+### Start the App
+this will start the app in development mode\
 `./start.sh`
