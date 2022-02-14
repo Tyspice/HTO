@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "hto-ui",
-    "slug": "hto-ui",
+    "name": "htub",
+    "slug": "htub",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
