@@ -1,25 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import * as eva from '@eva-design/eva';
+import { ApplicationProvider, BottomNavigation } from '@ui-kitten/components';
+import { AppNavigator } from './components/Navigation';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.titleText}>Hello World</Text>
-      <StatusBar style="auto" />
-    </View>
+    <ApplicationProvider {...eva} theme={eva.dark}>
+      <AppNavigator />
+    </ApplicationProvider> 
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#0065a9',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  titleText: {
-    color: '#dddddd',
-    fontSize: 50,
-  }
-
-});
