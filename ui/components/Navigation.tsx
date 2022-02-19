@@ -9,16 +9,16 @@ const { Navigator, Screen } = createBottomTabNavigator();
 
 const BottomTabBar = ({ navigation, state }: any) => (
     <BottomNavigation
-        selectedIndex={state.index}
-        onSelect={index => navigation.navigate(state.routeNames[index])}>
-        <BottomNavigationTab title='Home'/>
-        <BottomNavigationTab title='Settings'/>
+    selectedIndex={state.index}
+    onSelect={index => navigation.navigate(state.routeNames[index])}>
+        <BottomNavigationTab title='Home' />
+        <BottomNavigationTab title='Settings' />
     </BottomNavigation>
 );
 
 const MainNavigator = () => (
     <Navigator tabBar={props => <BottomTabBar {...props} />}>
-        <Screen name='Home' component={ Home } options={{ headerShown: false }}/>
+        <Screen name='Home' component={ Home } options={{ headerShown: false }} />
         <Screen name='Settings' component={Settings} options={{ headerShown: false }} />
     </Navigator>
 );
