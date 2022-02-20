@@ -1,11 +1,19 @@
-import React from 'react';
-import { Layout, Text } from '@ui-kitten/components';
+import React from "react";
+import { StyleSheet } from "react-native";
+import { Layout, Text } from "@ui-kitten/components";
 
-export const Settings = () => {
+export const Settings = () => (
+  <Layout style={styles.container}>
+    <Text>This Is The Settings Screen</Text>
+  </Layout>
+);
 
-  return (
-    <Layout style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>This Is The Settings Screen</Text>
-    </Layout>
-  );
-};
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    paddingTop: 20,
+    paddingBottom: 40,
+    justifyContent: "space-around",
+    alignItems: "center",
+  },
+});
