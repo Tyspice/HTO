@@ -1,11 +1,7 @@
 import React from "react";
+import { ListData } from "../models/Interfaces";
 import { Button, Divider, Layout, Text } from "@ui-kitten/components";
 import { View, StyleSheet } from "react-native";
-
-interface ListData {
-  label: string;
-  value: string;
-}
 
 const listData = [
   { label: "State", value: "Heating" },

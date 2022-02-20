@@ -1,12 +1,8 @@
-import React, { ReactElement } from "react";
+import React from "react";
+import { Setting } from "../models/Interfaces";
 import { StyleSheet, View } from "react-native";
 import { Layout, Text } from "@ui-kitten/components";
 import { Divider, List, ListItem, Input } from "@ui-kitten/components";
-
-interface Setting {
-  title: string;
-  input?: () => ReactElement;
-}
 
 const ServerInput = () => {
   return <Input placeholder="<ip>" />
