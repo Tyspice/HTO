@@ -5,11 +5,11 @@ import { Layout, Text } from "@ui-kitten/components";
 import { Divider, List, ListItem, Input } from "@ui-kitten/components";
 
 const ServerInput = () => {
-  return <Input placeholder="<ip>" />
+  return <Input placeholder="<ip>" />;
 };
 
-const AuthInput= () => {
-  return <Input placeholder="<token>" /> 
+const AuthInput = () => {
+  return <Input placeholder="<token>" />;
 };
 
 const settings: Setting[] = [
@@ -39,8 +39,8 @@ const SettingsList = () => (
 );
 
 const Title = () => (
-  <View style={ styles.titleContainer }>
-    <Text style={ styles.title }>SETTINGS</Text>
+  <View style={styles.titleContainer}>
+    <Text style={styles.title}>SETTINGS</Text>
   </View>
 );
 
@@ -72,6 +72,6 @@ const styles = StyleSheet.create({
   },
   titleContainer: {
     marginTop: 25,
-    padding: 50
+    padding: 50,
   },
 });
